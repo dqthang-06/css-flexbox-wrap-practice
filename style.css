@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.example-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.example-box h2 {
+    font-size: 18px;
+    color: #0284c7;
+    margin-bottom: 6px;
+}
+
+.example-box p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Khung Container chung */
+.container {
+    display: flex;
+    width: 600px;
+    height: 220px;
+    gap: 10px;
+    border: 2px solid #334155;
+    background-color: #f1f5f9;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Các Flex Item */
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 4px;
+    flex-shrink: 0; /* Giữ nguyên độ rộng để thấy rõ hiệu ứng tràn hoặc co */
+}
+
+/* 1. wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+.wrap .item {
+    background-color: lightblue;
+    color: #0369a1;
+}
+
+/* 2. nowrap */
+.nowrap {
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Cho phép cuộn ngang nếu item tràn viền */
+}
+.nowrap .item {
+    background-color: lightgreen;
+    color: #15803d;
+}
+
+/* 3. wrap-reverse */
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.wrap-reverse .item {
+    background-color: lightcoral;
+    color: #991b1b;
+}
+
+/* 4. initial (tương đương nowrap) */
+.initial {
+    flex-wrap: initial;
+    overflow-x: auto;
+}
+.initial .item {
+    background-color: #fde047;
+    color: #854d0e;
+}
