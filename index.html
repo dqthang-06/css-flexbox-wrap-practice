@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Flexbox: flex-wrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Thực Hành Thuộc Tính CSS Flexbox: flex-wrap</h1>
+
+    <!-- 1. flex-wrap: wrap -->
+    <div class="example-box">
+        <h2>1. flex-wrap: wrap</h2>
+        <p>Cho phép các item tự động xuống dòng mới khi không đủ không gian (theo hướng từ trên xuống dưới).</p>
+        <div class="container wrap">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </div>
+
+    <!-- 2. flex-wrap: nowrap -->
+    <div class="example-box">
+        <h2>2. flex-wrap: nowrap (Mặc định)</h2>
+        <p>Tất cả item bị ép trên cùng 1 dòng duy nhất, tự co lại hoặc tràn viền mà không xuống dòng.</p>
+        <div class="container nowrap">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </div>
+
+    <!-- 3. flex-wrap: wrap-reverse -->
+    <div class="example-box">
+        <h2>3. flex-wrap: wrap-reverse</h2>
+        <p>Cho phép xuống dòng nhưng đảo ngược trục phụ (Cross Axis): các dòng mới được xếp từ dưới lên trên.</p>
+        <div class="container wrap-reverse">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </div>
+
+    <!-- 4. flex-wrap: initial -->
+    <div class="example-box">
+        <h2>4. flex-wrap: initial</h2>
+        <p>Đưa thuộc tính về giá trị mặc định của CSS (tương đương với <code>nowrap</code>).</p>
+        <div class="container initial">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
